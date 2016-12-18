@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@android:color/darker_gray">
+
+    <LinearLayout
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:text="Change IP/Port:"
+            android:textSize="38dp"
+            android:layout_weight="0.8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"/>
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/help"
+            android:id="@+id/imageButton3"
+            android:onClick="helptut"
+            android:backgroundTint="@android:color/background_light"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <TextView
+            android:text="Vid Port:"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+             />
+        <EditText
+            android:text=""
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="30dp"
+            android:ems="10"
+            android:id="@+id/vidport"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <TextView
+            android:text="SSH Port:"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            />
+        <EditText
+            android:text=""
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="30dp"
+            android:ems="10"
+            android:id="@+id/sshport"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <TextView
+            android:text="Local IP:"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            />
+
+        <EditText
+            android:text=""
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="30dp"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+        <TextView
+            android:text="Globl IP:"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            />
+        <EditText
+            android:text=""
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="30dp"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <Button
+        android:text="Enter"
+        android:textAllCaps="false"
+        android:background="@android:color/darker_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:onClick="Back"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:src="@drawable/ras"
+        >
+
+    </ImageView>
+</LinearLayout>

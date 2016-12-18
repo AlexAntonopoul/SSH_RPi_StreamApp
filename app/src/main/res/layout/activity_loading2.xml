@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/holo_red_dark">
+
+    <TextView
+        android:text="Raspberry Motion Camera SSH"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:textColor="@android:color/background_light"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_weight="0.5"
+        android:src="@drawable/ras"/>
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:id="@+id/progressBar"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:id="@+id/textView3"
+        android:textColor="@android:color/background_light"/>
+
+</LinearLayout>

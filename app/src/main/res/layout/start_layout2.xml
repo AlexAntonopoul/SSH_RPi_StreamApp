@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_dark">
+
+    <RelativeLayout
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ras"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageView4"
+            android:onClick="RpiCom"/>
+
+        <ImageButton
+            android:onClick="helptut"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/help"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/imageButton4"
+            android:backgroundTint="@android:color/background_light"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="0.5dp"
+        android:background="@android:color/background_light"
+        android:layout_weight="0.15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:onClick="StartSYSTEM"
+                android:text="SYSTEM START"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_margin="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#8ebf4d"
+                android:layout_weight="0.5"
+                />
+            <Button
+                android:textStyle="bold"
+                android:onClick="OpenStream"
+                android:text="OPEN STREAM"
+                android:textSize="20dp"
+                android:layout_margin="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="#8ebf4d" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textColor="@android:color/background_light"
+                android:onClick="StreamSaveLocal"
+                android:text="Start Stream Local"
+                android:textAllCaps="false"
+                android:layout_margin="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#c7063d"
+                android:layout_weight="0.5"
+                />
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:textColor="@android:color/background_light"
+                    android:onClick="RecordSaveCloud"
+                    android:layout_margin="0.5dp"
+                    android:text="Start Record Cloud"
+                    android:textAllCaps="false"
+                    android:background="#c7063d"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    />
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#c7063d"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textColor="@android:color/background_light"
+                android:onClick="StartStream"
+                android:text="Start Stream"
+                android:textAllCaps="false"
+                android:layout_margin="0.5dp"
+                android:background="#c7063d"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                />
+            <Button
+                android:textColor="@android:color/background_light"
+                android:onClick="SudoReboot"
+                android:text="Reboot"
+                android:textAllCaps="false"
+                android:background="#c7063d"
+                android:layout_margin="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textColor="@android:color/background_light"
+                android:onClick="CancelStop"
+                android:text="End all"
+                android:layout_margin="0.5dp"
+                android:background="#c7063d"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                />
+            <Button
+                android:textColor="@android:color/background_light"
+                android:onClick="Exit"
+                android:text="Exit"
+                android:background="#c7063d"
+                android:layout_margin="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="5dp">
+
+
+        <ImageButton
+            android:onClick="dropbox"
+            android:layout_width="73dp"
+            android:layout_height="70dp"
+            android:background="@drawable/drop"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@android:color/background_light"/>
+
+        <TextView
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@android:color/background_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView" />
+
+    </RelativeLayout>
+</LinearLayout>
